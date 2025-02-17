@@ -1,107 +1,110 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Identifying page language -->
+<html lang="en" class="js backgroundsize borderimage csstransitions fontface svg">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi/Max Real Estate - Trusted Real Estate Agents</title> <!-- Descriptive title -->
+    <title>Hi/Max Real Estate - Trusted Real Estate Agents</title>
+    <meta charset="utf-8">
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
+    <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
+    <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/css/theme.min.css">
+    <style>
+        .social a svg {
+            width: 30px;
+            fill: #91929a;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Header Section with Unique Landmark -->
     <header role="banner">
-        <h1>Hi/Max Real Estate & Houses</h1> <!-- Removed redundant role="heading" aria-level="1" -->
-        <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make.</p>
+        <div class="app-bar">
+            <div class="container">
+                <h1>Hi/Max Real Estate</h1>
+            </div>
+        </div>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="internet-en.html">Buying</a></li>
+                <li><a href="intranet-en.html">Selling</a></li>
+                <li><a href="faq-en.html">FAQs</a></li>
+                <li><a href="contact-en.html">Contact us</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Navigation with a Unique Label -->
-    <nav role="navigation" aria-label="Main Navigation">
-        <ul>
-            <li><a href="#about">Why Hi/Max</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#stats">Statistics</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content Section -->
-    <main role="main">
-        
-        <!-- Why Choosing Hi/Max -->
-        <section id="about">
-            <h2>Why Choosing Hi/Max?</h2>
-            <p>Hi/Max agents go above and beyond and always strive to be the best they can be.</p>
+    <main role="main" class="container">
+        <section>
+            <h2>Welcome</h2>
+            <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make...</p>
         </section>
-
-        <!-- Data Table with ID and Headers for Accessibility -->
-        <section id="stats">
+        
+        <aside aria-labelledby="resources">
+            <h2 id="resources">Related Resources</h2>
+            <ul>
+                <li><a href="#">Looking for an upgrade?</a></li>
+                <li><a href="#">Buying tips</a></li>
+                <li><a href="#">How much is your current home worth?</a></li>
+            </ul>
+        </aside>
+        
+        <section>
             <h2>Stats of Hi/Max</h2>
-            <table>
-                <caption>Sales Data for Hi/Max</caption>
+            <table border="1">
+                <caption>Yearly Sales Data</caption>
                 <thead>
                     <tr>
-                        <th id="year">Year</th>
-                        <th id="sold">Sold Properties</th>
-                        <th id="single">Single House</th>
-                        <th id="condo">Condo</th>
+                        <th>Year</th>
+                        <th>Sold Properties</th>
+                        <th>Average Selling Price (Single House)</th>
+                        <th>Average Selling Price (Condo)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td headers="year">2021</td>
-                        <td headers="sold">50</td>
-                        <td headers="single">$500,000</td>
-                        <td headers="condo">$189,000</td>
+                        <td>2021</td>
+                        <td>150</td>
+                        <td>$500,000</td>
+                        <td>$189,000</td>
                     </tr>
                     <tr>
-                        <td headers="year">2022</td>
-                        <td headers="sold">100</td>
-                        <td headers="single">$780,000</td>
-                        <td headers="condo">$240,000</td>
+                        <td>2022</td>
+                        <td>300</td>
+                        <td>$780,000</td>
+                        <td>$240,000</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-
-        <!-- Related Resources List -->
-        <section id="resources">
-            <h2>Related Resources</h2>
-            <ul>
-                <li><a href="#">Looking for an upgrade?</a></li>
-                <li><a href="#">Buying Tips</a></li>
-                <li><a href="#">How Much is Your Current Home Worth?</a></li>
-            </ul>
-        </section>
-
-        <!-- More Resources Article -->
-        <article>
-            <h2>More Resources on How to Choose the Right Agent</h2>
-            <p>What Are The Risks of Selling a Home Yourself? We’ve all seen the videos, read the stories...</p>
-            <a href="#">Read more</a>
-        </article>
-
-        <!-- 7 Questions to Ask -->
-        <article>
+        
+        <section>
             <h2>7 Questions to Ask a Real Estate Agent Before You Commit</h2>
             <p>According to research by the National Association of Realtors, there are considerable benefits...</p>
-        </article>
-
-        <!-- 8 Reasons to Hire an Agent -->
-        <article>
+        </section>
+        
+        <section>
             <h2>8 Reasons to Hire an Agent When Selling Your Home</h2>
-            <p>With all the different moving parts involved in selling your home, here are eight reasons...</p>
-        </article>
-
+            <p>With all the different moving parts involved in selling your home...</p>
+        </section>
+        
+        <section>
+            <h2>Find Your Dream Home</h2>
+            <img src="images/real-estate.jpg" alt="Modern house for sale with a spacious front yard">
+        </section>
     </main>
-
-    <!-- Footer with Accessible Twitter Icon -->
+    
     <footer role="contentinfo">
-        <p>© 2025 Hi/Max Real Estate</p>
-        <a href="https://twitter.com/HiMaxRealEstate" aria-label="Follow us on Twitter">
-            <svg role="img" aria-labelledby="twitter-icon">
-                <title id="twitter-icon">Follow us on Twitter</title>
-                <use xlink:href="twitter.svg"></use>
-            </svg>
-        </a>
+        <h2>Hi/Max Real Estate</h2>
+        <ul>
+            <li><a href="#">About the company</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Accessibility statement</a></li>
+        </ul>
+        <div class="social">
+            <a href="#" aria-label="Follow us on Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <title>Twitter</title>
+                    <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" />
+                </svg>
+            </a>
+        </div>
     </footer>
-
 </body>
 </html>
